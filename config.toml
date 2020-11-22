@@ -1,0 +1,7 @@
+baseURL = "http://tarea7-isa-david.netlify.app/"
+languageCode = "en-us"
+title = "Aviones"
+theme= "plain"
+paginate= 3
+[outputs]
+  home = ["HTML", "JSON"]

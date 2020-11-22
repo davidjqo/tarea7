@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+{{ $path := ( print "content/data/aviones/" .File.TranslationBaseName ".json") }}
+
+{{ $dataJ := getJSON $path }}
+
+<div class="container p-3 my-3 border">
+<h5>{{ .Title }}</h5>
+
+<h6>Detalles del Avion</h6>
+<table class="table table-hover table-bordered">
+    <tbody>
+        <tr> 
+            <td>Name</td>
+            <td>{{ $dataJ.title }}</td>
+        </tr>
+        <tr> 
+            <td>Descripción</td>
+            <td>{{ $dataJ.description }}</td>
+        </tr>
+        <tr>
+            <td>Aerolíneas</td>
+            <td>
+                {{ range $dataJ.aerolineas }}
+                    <a href="/aerolineas/{{ .aerolineaId }}">
+                        <input class="u-full-width" type="button" id=" author" value="{{ .title }}" readonly/>
+                    </a>
+                {{ end }}
+            </td>
+        </tr>
+        <tr>
+            <td>Fabricantes</td>
+            <td>
+                {{ range $dataJ.fabricantes }}
+                    <a href="/fabricantes/{{ .fabricanteId }}">
+                        <input class="u-full-width" type="button" id=" author" value="{{ .title }}" readonly/>
+                    </a>
+                {{ end }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Origen</td>
+            <td>{{ $dataJ.origin }}</td>
+        </tr>
+        <tr> 
+            <td>Primer vuelo</td>
+            <td>{{ $dataJ.primer_vuelo }}</td>
+        </tr>
+     
+    </tbody>
+</table>
+
+</div>
+{{ end }}

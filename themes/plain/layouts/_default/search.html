@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section>
+  <div class="my-auto" >
+        <h3>Matching pages</h3>
+    <div id="search-results">
+    </div>
+  </div>
+</section>
+<script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}">
+      <a href="${link}">${title}</a>
+    </div>
+</script>
+{{ end }}

@@ -1,0 +1,13 @@
+{
+    "aerolineaId": "jetblue",
+    "title": "JetBlue Airways",
+    "fundacion": "1999",
+    "sede": "Forest Hills Nueva York, Estados Unidos",
+    "description":"JetBlue Airways es una aerolínea estadounidense de bajo costo perteneciente a la JetBlue Airways Corporation (NASDAQ: JBLU). La compañía tiene sus oficinas corporativas en Forest Hills, cerca del barrio de Queens en la ciudad de Nueva York. Su base principal está localizada en el Aeropuerto Internacional John F. Kennedy.",
+    "aviones": [
+        {
+            "avionId": "e190",
+            "title": "E-190"
+        }
+    ]
+}

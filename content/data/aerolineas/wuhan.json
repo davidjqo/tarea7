@@ -1,0 +1,13 @@
+{
+    "aerolineaId": "wuhan",
+    "title": "Wuhan Airlines",
+    "fundacion": "1986",
+    "sede": "Wuhan, República Popular China",
+    "description":"Era una aerolínea con sede en Wuhan de la República Popular China. En 2003, se fusionó con China Eastern Airlines.",
+    "aviones": [
+        {
+            "avionId": "ma60",
+            "title": "Xian MA60"
+        }
+    ]
+}
